@@ -15,7 +15,9 @@ app.get("/",(req,res)=>
 app.get("/user/:id",
 (res,req)=>
 {
+    //Declaring a variable to store the 
     const userID = req.params.id;
+    //returning response of the id request in the parameter
     res.send(userID);
 })
 
